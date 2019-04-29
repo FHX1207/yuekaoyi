@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+           <h2>个人中心</h2>
+            <div><img src="img/pace.jpg" alt="" class="img"><span class="username">张甲</span></div>
+        </header>
+        <section class="main">
+            <h2>我的记录</h2>
+            <div class="mainlist">
+                <div>
+                    <p class="days"></p>
+                    <p>做题天数</p>
+                </div>
+                <div>
+                        <p class="number"></p>
+                        <p>连续做题天数</p>
+                </div>
+                <div>
+                        <p>32道</p>
+                        <p>做题数量</p>
+                </div>
+                <div>
+                        <p class="colre"></p>
+                        <p>做题得分率</p>
+                </div>
+            </div>
+            
+        </section>
+        <footer class="footer"></footer>
+    </div>
+    <script src="./js/libs/require.js"></script>
+    <script>
+    require(['js/main'],()=>{
+        require(['index'])
+    })
+    
+    
+    </script>
+</body>
+
+</html>
